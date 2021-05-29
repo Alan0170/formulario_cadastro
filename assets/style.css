@@ -1,0 +1,178 @@
+/* Todos os elementos da página */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#titulo {
+
+    color: #0b2d61;
+    text-align: center;
+    padding-top: 20px;
+} 
+
+#subtitulo {
+
+    color: #0b2d61;
+    margin-left: 10%;
+} 
+
+#check{
+    display: flex;
+}
+
+fieldset {
+    border: 0;
+}
+.container {
+    background-size: cover;
+}
+.container label {
+    padding: 1px;
+}
+.container2 {
+    display: flex ;
+    flex-direction: column;
+    border: 1px solid #0b2d61;
+    margin-left:auto ;
+    margin-right: auto;
+    box-shadow: 1px 1px 5px #0b2d61;
+    width:30em;
+    padding: 15px;
+    align-items: center;
+    background-color: #6bc5e0b7;
+
+}
+
+body{
+    background-image: url(img/desenvolvedor2.png) ;
+    background-size: cover;
+    background-color: #4c9fe4ad;
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #0b2d61;
+    margin-top: 2%;
+
+}
+
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #0b2d61;
+    border-radius: 5px;
+}
+
+.grupo:before, .grupo:after {
+    display: flex;
+}
+
+.grupo:after {
+    clear: both;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #0b2d61;
+    display: flex;
+ 
+}
+
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 1em;
+ 
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo input[type="tel"],.campo select, .campo textarea {
+    padding: 0.4em;
+    border: 1px solid #0b2d61;
+    box-shadow: 2px 2px 2px #00000033;
+    display: flex;
+
+}
+textarea {
+    width: 26em;
+}
+
+
+.campo select option {
+    padding-right: 1em;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #f1f2f3;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: #98e6fdbd;
+    border: 0;
+    margin-bottom: 1em;
+    color: #3e5e9b;
+    padding: 0.2em 0.6em;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    position: relative;
+    top: 80%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+    
+}
+
+.botao:hover {
+    background: #1fa1d4;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.botao, select{
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+@media (min-width:600px){
+    .container2{
+        width: 500px;
+        height: 830px;
+        margin-bottom: 15em;
+        background-size: cover;
+    }
+    form {
+        width: 450px;
+        height: 350px;
+    }
+    textarea {
+        width: 25em;
+        margin-bottom: 2em;
+    }
+    .botao {
+        position: relative;
+        top: 10%;
+        margin-bottom: 0.5em;
+    }
+}
+@media (min-width:300px) and (max-width:599px) {
+    .container2{
+        width: 320px;
+    }
+    form {
+        width: 290px;
+    }
+    textarea {
+        width: 14em;
+        margin-bottom: 2em;
+    }
+    .botao {
+        position: relative;
+        top: 98%;
+        margin-bottom: 0.2em;
+    }
+}
